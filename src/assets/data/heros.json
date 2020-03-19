@@ -1,7 +1,7 @@
 [
     {
         "id": "sup",
-        "image": "",
+        "image": "assets/avatar.png",
         "name": "Superman",
         "powers": "Flying",
         "description": "Superman's description",
@@ -9,7 +9,7 @@
     },
     {
         "id": "bat",
-        "image": "",
+        "image": "assets/avatar.png",
         "name": "Batman",
         "powers": "Making his voice thicker",
         "description": "Batman's description",
@@ -17,7 +17,7 @@
     },
     {
         "id": "spi",
-        "image": "",
+        "image": "assets/avatar.png",
         "name": "Spiderman",
         "powers": "Firing webs",
         "description": "Spiderman's description",

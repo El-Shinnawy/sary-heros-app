@@ -1,2 +1,3 @@
-<p>details works!</p>
-<span *ngIf="details">{{details.name}}</span>
+<div class="d-flex align-items-center justify-content-center" *ngIf="details">
+    <app-hero-info-card [details]="details" *ngIf="details"></app-hero-info-card>
+</div>
