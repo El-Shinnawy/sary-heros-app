@@ -1,1 +1,33 @@
-<p>list works!</p>
+<div class="d-flex align-items-center justify-content-between">
+    <app-search-field [autoFocus]="true" (onSearchTextChange)="searchText = $event"></app-search-field>
+    <app-sort></app-sort>
+</div>
+
+<table class="w-100 mt-5">
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Powers
+            </th>
+            <th>
+                Rate
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="cursor-pointer" *ngFor="let hero of heros | filter:searchText" (click)="openDetails(hero.id)">
+            <td class="text-center">
+                {{hero.name}}
+            </td>
+            <td class="text-center">
+                {{hero.powers}}
+            </td>
+            <td class="text-center d-flex justify-content-center align-items-center">
+                <app-rate-stars [rate]="hero.rate"></app-rate-stars>
+            </td>
+        </tr>
+    </tbody>
+</table>

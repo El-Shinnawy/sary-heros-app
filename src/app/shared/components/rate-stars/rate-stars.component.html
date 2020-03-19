@@ -1,0 +1,4 @@
+<div class="px-2 d-flex">
+    <span class="fa fa-star" *ngFor="let number of [1,2,3,4,5]" [ngClass]="{'text-color-disabled': number > rate,
+        'text-color-gold': number <= rate}"></span>
+</div>

@@ -1,0 +1,15 @@
+@import '../../../../../assets/custom-classes.scss';
+
+table {
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  @extend .solid-default-border;
+}
+
+th,td{
+    @extend .p-2;
+}

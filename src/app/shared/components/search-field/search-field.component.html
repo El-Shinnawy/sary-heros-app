@@ -1,0 +1,5 @@
+<div class="search-wrapper solid-default-border d-flex align-items-center">
+    <span class="search-icon fa fa-search d-flex align-items-center justify-content-center"></span>
+    <input type="text" class="search-input flex-1" [(ngModel)]="searchText"
+        (ngModelChange)="searchChanged()" #search />
+</div>

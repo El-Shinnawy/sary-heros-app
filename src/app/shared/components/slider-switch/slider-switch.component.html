@@ -1,0 +1,12 @@
+<div class="switchs-wrapper solid-default-border p-1 d-flex justify-content-between">
+    <span class="switch cursor-pointer w-50 text-center text-color-main p-1"
+        (click)="switchSortType(sortTypes.Name)"
+        [ngClass]="{'background-main text-color-white': selectedSortType == sortTypes.Name}">
+        Name
+    </span>
+    <span class="switch cursor-pointer w-50 text-center text-color-main p-1"
+        (click)="switchSortType(sortTypes.Powers)"
+        [ngClass]="{'background-main text-color-white': selectedSortType == sortTypes.Powers}">
+        Powers
+    </span>
+</div>

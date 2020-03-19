@@ -1,13 +1,16 @@
 import { Injectable } from '@angular/core';
 import { XhrService } from 'src/app/core/services/xhr.service';
 import { map } from 'rxjs/operators';
+import { Observable } from 'rxjs';
+import { UtilitiesService } from 'src/app/core/services/utilities.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class HerosService {
 
-  constructor(private xhrService: XhrService) { }
+  constructor(private xhrService: XhrService,
+    private utilitiesService: UtilitiesService) { }
 
   heros;
 
@@ -19,13 +22,6 @@ export class HerosService {
   }
 
   getHeroByID(id) {
-    if (this.heros) {
-      return this.heros.filter(hero => hero.id === id);
-    }
-    else {
-      this.getHeros().subscribe(res => {
-        this.getHeroByID(id);
-      })
-    }
+    return this.heros ? this.utilitiesService.filterObjectsByKey('id', id, this.heros) : undefined;
   }
 }

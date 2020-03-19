@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { HerosComponent } from './heros.component';
 import { ListComponent } from './pages/list/list.component';
+import { DetailsComponent } from './pages/details/details.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,10 @@ const routes: Routes = [
   {
     path: 'list',
     component: ListComponent
+  },
+  {
+    path: 'details/:id',
+    component: DetailsComponent
   }
 ];
 

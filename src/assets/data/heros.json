@@ -4,20 +4,23 @@
         "image": "",
         "name": "Superman",
         "powers": "Flying",
-        "description": "Superman's description"
+        "description": "Superman's description",
+        "rate": 4
     },
     {
         "id": "bat",
         "image": "",
         "name": "Batman",
         "powers": "Making his voice thicker",
-        "description": "Batman's description"
+        "description": "Batman's description",
+        "rate": 2
     },
     {
         "id": "spi",
         "image": "",
         "name": "Spiderman",
         "powers": "Firing webs",
-        "description": "Spiderman's description"
+        "description": "Spiderman's description",
+        "rate": 3
     }
 ]
